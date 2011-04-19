@@ -38,5 +38,10 @@ module CardWall
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # Configure test framework to use rspec
+    config.generators do |g|
+      g.test_framework :rspec
+    end
   end
 end
