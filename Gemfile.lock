@@ -157,6 +157,7 @@ DEPENDENCIES
   launchy
   pg
   rails (= 3.0.6)
+  rspec
   rspec-rails
   ruby-debug19
   spork

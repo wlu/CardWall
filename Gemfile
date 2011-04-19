@@ -31,20 +31,14 @@ group :development, :test do
   gem 'ruby-debug19'
 end
 
-group :test do
+group :test, :cucumber do
+  gem 'rspec'
   gem 'rspec-rails'
-end
-
-group :cucumber do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'cucumber'
-  gem 'rspec-rails'
   gem 'spork'
   gem 'launchy'   # So you can do Then show me the page
-end
-
-group :test, :cucumber do
   gem 'ruby-debug19'
 end
