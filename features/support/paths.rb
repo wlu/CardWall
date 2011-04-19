@@ -11,9 +11,13 @@ module NavigationHelpers
     when /the home\s?page/
       '/'
 		when /card index page/
-			'/cards'
+			cards_path
 		when /the new card page/
-			'/cards/new'
+			new_card_path()
+		when /the show page of card "(.*)"$/
+			card_path(Card.find_by_title($1.to_s))
+		when /the edit page of card "(.*)"$/
+			edit_card_path(Card.find_by_title($1.to_s))
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

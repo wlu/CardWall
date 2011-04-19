@@ -28,6 +28,7 @@ gem 'unicorn'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'webrat'
+  gem 'ruby-debug19'
 end
 
 group :test do
@@ -42,4 +43,8 @@ group :cucumber do
   gem 'rspec-rails'
   gem 'spork'
   gem 'launchy'   # So you can do Then show me the page
+end
+
+group :test, :cucumber do
+  gem 'ruby-debug19'
 end

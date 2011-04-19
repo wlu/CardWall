@@ -10,5 +10,5 @@ Feature: Create a new card
 		When I fill in "Title" with "First Card"
  		And I fill in "Description" with "Creating First Card"
 		And I press "Create"
-		Then I should be on card index page
+		Then I should be on the show page of card "First Card"
 
